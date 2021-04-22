@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC - Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <h1 id="title">Car browser</h1>
+    <p id="description">Find the car that suits you best !</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name : <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+        </label>
+        <label for="email" id="email-label">
+            Email : <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+        </label>
+        <label for="age" id="number-label">
+            Age : <input type="number" name="age" id="number" placeholder="Enter your age..." min="0" max="120">
+        </label>
+        <label for="dropdown">
+            Select :
+            <select name="select" id="dropdown">
+                <option value="premiere">Premiere</option>
+                <option value="deuxieme">Deuxieme</option>
+                <option value="troisieme">Troisieme</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Choose one of these three items:</legend>
+            <input id="one" type="radio" name="items" value="one">
+            <label for="one">Choice One</label><br>
+            <input id="two" type="radio" name="items" value="two">
+            <label for="two">Choice Two</label><br>
+            <input id="three" type="radio" name="items" value="three">
+            <label for="three">Choice Three</label>
+          </fieldset>
+          <fieldset>
+              <legend>Choose one or several of these items:</legend>
+              <input type="checkbox" name="th" id="first" value="first">First
+              <input type="checkbox" name="th" id="sec" value="sec">Sec
+              <input type="checkbox" name="th" id="th" value="th">Th
+          </fieldset>
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          <button type="submit" id="submit">Submit</button>
+    </form>
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
